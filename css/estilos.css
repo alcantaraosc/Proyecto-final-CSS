@@ -31,8 +31,10 @@ header{
 
 /*poner el menu en una linea recta*/
 li{
-    display: inline;
+    display: inline-block;
     padding: 10px;
+    list-style-type: none;
+    color: white;
 }
 
 a{
@@ -43,17 +45,11 @@ a{
     text-shadow: 2px, 0px, #02010a;
 }
 
-  /*quitar las viñetas del menu*/
-  ul li {
-    list-style-type: none;
-    color: white;
-}
-/*fin del menu navegacion*/
-
 /*quitar el subrayado a Inicio*/
  a[href="index.html"] {
     text-decoration: none;
 }
+/*fin del menu navegacion*/
 
  /*seleccionar el 2do hijo de body de la etiqueta section*/
  section:nth-child(2){
@@ -257,15 +253,11 @@ footer p{
     img{
         width:70%;
         height:70%;
-    }
-
-    img{
-       
         padding: 0px;
         margin: 0px;
-        
         text-align: center;
     }
+
 
     section:nth-child(2){
         width: 100%;

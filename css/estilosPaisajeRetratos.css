@@ -23,15 +23,17 @@ header{
 
 /*menu de navegacion*/
 .encabezado-principal{
-    margin:0%;
-    padding: 0%;
-    border:0%;
+    margin:0;
+    padding:0;
+    border:0;
 }
 
 /*poner el menu en una linea recta*/
 li{
     display: inline;
     padding: 10px;
+    list-style-type: none;
+    color: white;
 }
 
 a{
@@ -42,11 +44,6 @@ a{
     text-shadow: 2px, 0px, #02010a;
 }
 
-  /*quitar las viñetas del menu*/
-  ul li {
-    list-style-type: none;
-    color: white;
-}
 /*fin del menu navegacion*/
 
  /*seleccionar el 2do hijo de body de la etiqueta section*/
