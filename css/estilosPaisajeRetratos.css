@@ -1,0 +1,229 @@
+@font-face{
+    font-family: 'Dancing Script';
+   src: url('Dancing+Script.otf');
+   
+}
+
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: #02010a;
+}
+
+/*encabezado*/
+header{
+    /*aplicar fondo para el encabezado*/
+    background-color: #5b7989;
+    /*aplicar bordes redondo*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:white;
+    width: 100%;
+    height: 120%; 
+}
+
+/*menu de navegacion*/
+.encabezado-principal{
+    margin:0%;
+    padding: 0%;
+    border:0%;
+}
+
+/*poner el menu en una linea recta*/
+li{
+    display: inline;
+    padding: 10px;
+}
+
+a{
+    color: inherit;
+}
+
+.navegacion h1{
+    text-shadow: 2px, 0px, #02010a;
+}
+
+  /*quitar las viñetas del menu*/
+  ul li {
+    list-style-type: none;
+    color: white;
+}
+/*fin del menu navegacion*/
+
+ /*seleccionar el 2do hijo de body de la etiqueta section*/
+ section:nth-child(2){
+     background-color:#d5c75f;
+     text-align: center;
+     
+}
+
+#imagen1 > img {
+	filter:blur(10px);
+	-webkit-filter:blur(10px);
+}
+
+#imagen2 > img ,#imagen4 > img , #imagen6 > img {
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+}
+
+#imagen3 > img {
+    filter:sepia(90%);
+    -webkit-filter:sepia(90%);
+}
+
+#imagen2 > img {
+    box-shadow: 2px 2px #82c3a6;
+}
+
+img{
+    box-shadow: 2px 2px black;
+    text-align: center;
+}
+
+@keyframes animacion-body{
+    0%{
+        position: relative;
+        margin-top: 150%;
+    }
+
+    60%{
+        position: relative;
+        margin-top: -5%;
+    }
+
+    100%{
+        position: relative;
+        margin-top: 0%;
+    }
+}
+
+header {
+    animation-name: animacion-body;
+    animation-duration: 3s;
+}
+
+/*pie de pagina*/
+footer{
+    
+    clear: both;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 30%;
+    width: 100%;
+}
+
+footer p{
+    margin: 3px;
+    padding: 3px;
+    border: 3px;
+}
+
+/*tamaño de las imagenes de las redes sociales*/
+#columna3 p img{
+    height: 20px;
+    width: 16px;
+}
+
+
+
+/*desktop*/
+@media (min-width:900px){
+    
+    body{
+    margin: 10%;
+    }
+
+    /*enccabezado*/
+    header{
+        width: 100%;
+        height: 150px;
+    }
+
+    
+    /*Menu navegacion*/
+    /*ubicar a la izquierda el h1*/
+   .navegacion h1{
+    float: left;
+    }
+
+    ul li {
+        float: right;
+    }
+    /*fin encabezado*/
+
+    /*etiqueta section*/
+    section:nth-child(2){
+        width: 100%;
+        height: 50%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+     /*etiqueta section*/
+     .contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*que cada columna del pie de pagina tenga la anchura del 25%*/
+    .contenedor > div{
+        width: 33.33%;
+    }
+
+
+    /*pie de pagina*/
+    #contenedor-footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*que cada columna del pie de pagina tenga la anchura del 20%*/
+    #contenedor-footer > div{
+        margin-left: 5%;
+        width: 20%;
+    }
+}
+
+/*las imagenes son responsiva con % vh*/
+/*movil*/
+@media (max-width:899px){
+    body{
+        margin: 5%;
+    }
+
+    header{
+        width: 100%;
+        height: 100px;
+       text-align: center;
+    }
+
+    section:nth-child(2){
+        width: 100%;
+        height:100%;
+       
+    }
+
+    img{
+        width:100%;
+        height:100%;
+    }
+
+       /*etiqueta section*/
+       .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    /*muestra en una fila #contenido*/
+    #contenedor-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenedor-footer > div{
+        margin-left: 10%;
+    }
+}
